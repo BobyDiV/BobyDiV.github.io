@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 5px;
+  font-family: Arial;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0px 0px;
+  border: 0 px;
+}
+
+td {
+  border: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 30px;
+  word-break: keep-all;
+  padding: 0px;
+}
+
+h3 {
+  font-size: 14px;
+  word-break: break-all;
+  padding: 1px 0px;
+  margin: 2px;
+}
+
+#prehistory {
+  font-size: 12px;
+  word-break: normal;
+  padding: 1px 0px;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.column1 {
+  float: left;
+  width: 90%;
+}
+
+.column2 {
+  float: right;
+  width: 10%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 5px 10px;
+}
+.content p {
+  font-size: 10px;
+}
+.content .textbold {
+  font-style: italic;
+}
+
+.phone {
+  text-align: right;
+  color: blue;
+  font-size: 8px;
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+}
+
+.leftstr,
+.rightstr {
+  float: left;
+  width: 50%;
+  color: blue;
+  font-size: 8px;
+  font-style: italic;
+}
+.rightstr {
+  text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
